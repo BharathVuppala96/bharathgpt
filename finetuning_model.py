@@ -11,8 +11,7 @@ topic = st.text_input("Please enter the topic")
 
 st.code("""
             Try:
-            Explain Transformers Architecture
-            How does RAG work?
+            Create some post?
             """, language= None)
 
 # Initialize the models
@@ -36,7 +35,7 @@ if st.button("Generate Posts"):
             st.markdown(f'<div class="output-text">{base_response}</div>', unsafe_allow_html=True)
         
         with col2:
-            st.subheader("Satvik-GPT (Fine-tuned Model)")
+            st.subheader("Bharath-GPT (Fine-tuned Model)")
             st.markdown(f'<div class="output-text">{ft_response}</div>', unsafe_allow_html=True)
     else:
         st.warning("Please enter a topic before generating posts.")
